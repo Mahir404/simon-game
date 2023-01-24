@@ -22,7 +22,7 @@ function nextSequence() {
 function playGame() {
     setTimeout(function () {
         $(".btn").removeClass("disabled");
-        $("#level-title").html("Round: " + level);
+        $("#level-title").html("Level: " + level);
         new Promise(function (resolve) {
             var gameValID = setInterval(function () {
                 nextSequence();
